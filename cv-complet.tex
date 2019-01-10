@@ -1,0 +1,200 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Petitdemange}{Franck}
+\title{Candidat ingénieur logiciel}                               % optional, remove / comment the line if not wanted
+\address{29 rue Noemie Hamard}{53000}{Laval}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+336 75 34 38 89}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{petitdemange.franck@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.myname.webs.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{\textbf{Disponibilité : immédiate}}                 % optional, remove / comment the line if not wanted
+\photo[64pt]{photo.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Candidat maître de conférence}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{Je porte un grand intérêt aux problèmatiques du génie logiciel
+et ses challenges (efficacité et efficence des pratiques de
+développement, maîtrise des
+risques comme les coûts ou la sécurité).
+Je suis particulierement attentif aux principes de développement
+agile, et aux pratiques d'intégration continu et modélisation des
+systèmes.
+Je m'interesse également plus largement aux avancées faites dans les
+différents champs de l'informatique comme 
+l'intelligence artificielle, la cryptographie ainsi qu'aux techniques et
+technologies qu'ils en découlent.}
+
+\section{Expériences}
+%\vspace{5pt}
+
+\cventry{2014/2018}{Thèse}{Université de Bretagne
+Sud}{Vannes}{}{Objectif : travail de recherche sur l'évolution pendant à l'execution
+des systèmes complexes.\\
+Tâches : 
+\begin{itemize}
+\item état de l'art des langages, outils et méthodes 
+pour la conception des architectures de système complexe.
+\item conception d'une méthode pour assister l'architecte dans la conception d'une stratégie de reconfiguration 
+dynamique et d'un outil pour leur réutilisation.  
+\item analyse, conception et développement 
+d'un framework composant pour 
+la simulation de reconfiguration à l'éxecution de système complexe.
+\item \textbf{\textit{publications et présentation}} dans des conférences 
+et coloques internationnals (SESOS2015, TSI2015, ECSA 2016 et
+SOSE2018).
+\end{itemize}
+Outils et langages : \textbf{\textit{IBM rational software
+architect}}, \textbf{\textit{java}},
+\textbf{\textit{UPDM}}, \textbf{\textit{SysML}}, \textbf{\textit{OCL}}
+}
+%\cventre{2018}{Publication SOSE}{}{}{Doctorant}{publication et
+%présentation de contribution scientifique}
+
+\vspace{5pt}
+\cventry{2016/2018}{Attaché enseignement}{IUT de Bretagne
+Sud et ENSIBS (Ecole Nationale Supérieure d'Ingénieurs de
+Bretagne-Sud)}{Vannes}{}{
+Tâches :
+\begin{itemize}
+\item encadrement td/tp à l'IUT de Bretagne Sud : programmation objet avancée,
+patron de conception, UML, programmation
+I.H.M,
+algorithmique avancée, modélisation BDD.
+\item responsable module sur ingénierie
+dirigée par les modèles (IDM) avec \textbf{\textit{EMF}},
+\textbf{\textit{Payprus}} et \textbf{\textit{UML}} à l'ENSIBS .
+\item encadrement de stagiaires et gestion relation entreprise/IUT. 
+\end{itemize}}
+
+\vspace{5pt}
+\cventry{Avril à juin 2014}{Stagiaire ingénieur
+logiciel}{Lirmm (Laboratoire d'Informatique, de Robotique et de
+Microélectronique)}{Montpellier}{}{
+Objectif : conception d'une solution permettant l'extraction automatique
+d'information sur le contenu visuel de page web.\\
+Tâches : 
+\begin{itemize}
+\item état de l'art des techniques utilisées pour l'analyse de page
+web, 
+\item spécification et conception d'un outil pour la découverte des
+composants graphiques d'une page web. 
+\end{itemize}
+Outils et langages : \textbf{\textit{Javascript}},
+\textbf{\textit{HTML}}}
+
+\vspace{5pt}
+\cventry{Avril 2012}{Stagiaire ingénieur logiciel}{Université de Montpellier}{Montpellier}{}{
+Objectif : conception d'un outil de partage de fichier informatique. L'outil a
+été développé dans le cadre d'un projet en groupe d'étudiant de
+licence informatique. Le projet a eu la \textbf{meilleure note}.\\
+Tâches :   
+\begin{itemize}
+\item état de l'art de protocole
+de partage de fichier informatique
+\item implémentation d'un
+protocole P2P BitTorrent
+\item optimisation du choix des paires
+avec des critères géographiques et 
+d'émission de données
+\end{itemize}
+Outils et langages : \textbf{\textit{C++}}
+}
+
+\vspace{5pt}
+\cventry{Mars à juin 2010}{Stagiaire développeur web}{Zedimage}{Montréal}{}{
+Objectif : développer un composant pour gérer
+les informations sur les clients de la compagnie.\\ 
+Tâches : conception d'un composant web pour le système de gestion de contenu de
+l'entreprise en suivant un paradigme \textbf{\textit{MVC}}.\\
+Outils et langages : \textbf{\textit{HTML/CSS}}, \textbf{\textit{PHP}}}
+%\vspace{2pt}
+
+\vspace{5pt}
+\cventry{Mars à juin 2009}{Stagiaire développeur VBA}{C.E.B (Construction
+Électrique de Beaucourt)}{Beaucourt}{}{
+Objectif : conception d'un logiciel de devis.\\
+Tâches : collectecte des exigences, conception, implémentation et
+déploiement du logiciel développé.\\ 
+Outils et langages : Visual Basic for Applications
+(\textbf{\textit{VBA}})}
+
+\section{Parcours universitaire}
+\cventry{2014/2018}{Thèse spécialité
+informatique}{Vannes}{}{}{financement ministériel obtenu sur concours,
+\textbf{rang 1/10}}{}
+\cventry{2012/2014}{Master Architectures et Ingénierie du logiciel
+et du Web (AIGLE)}{Montpellier}{}{\textbf{\textit{rang : 3/56}}}{}
+\cventry{2011/2012}{Licence informatique}{Montpellier}{}{\textbf{\textit{rang
+: 10/128}}}{}
+\cventry{2010/2012}{DUT informatique}{Belfort}{}{}{}
+
+\section{Langue}
+\cvline{Français}{Langue maternelle}
+\cvline{Anglais}{Bon niveau}
+%\vspace{5pt}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
